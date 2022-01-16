@@ -6,13 +6,7 @@ def merge_dict(dict_first, dict_second):
     arr=['감', '귤', '배', '사과', '포도']
     dict_total={}
     for i in arr:
-        if dict_first.get(i) and dict_second.get(i):
-            dict_total[i]=dict_total[i]=dict_first.get(i) + dict_second.get(i)
-        else:
-            if dict_first.get(i):
-                dict_total[i]=dict_first.get(i)
-            else:
-                dict_total[i]=dict_second.get(i)
+        dict_total[i] = dict_first.get(i, 0) + dict_second.get(i, 0)
     print(dict_total)
-    
+
 merge_dict(dict_first, dict_second)
