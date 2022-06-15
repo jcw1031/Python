@@ -24,6 +24,6 @@ time.sleep(7)
 while True:
     e = driver.find_elements_by_class_name('DraftEditor-root')[0]
     e = driver.find_elements_by_class_name('fontSize16Padding-XoMpjI')[1]
-    e.send_keys('!강화 성공')
+    e.send_keys('!강화 데이터통신')
     e.send_keys(Keys.ENTER)
     time.sleep(62)
